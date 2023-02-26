@@ -1,0 +1,15 @@
+--- TEQUILA KIWI API ---
+# Search API docs: https://tequila.kiwi.com/portal/docs/tequila_api/search_api
+
+# The correct date format is dd/mm/YYYY, e.g. 29/05/2021
+# Local departure and arrival times are indicated by parameters local_departure and local_arrival.
+# We do not support using body in GET requests.
+# Use a proper content type in the headers for all requests to Tequila API: Content-Type: application/json
+
+#### Basic flights call
+# The basic flights call could look like this:
+# https://api.tequila.kiwi.com/v2/search
+# ?fly_from=LGA&fly_to=MIA&dateFrom=01/04/2021&dateTo=02/04/2021
+
+
+--- SHEETY --- Google sheet API
