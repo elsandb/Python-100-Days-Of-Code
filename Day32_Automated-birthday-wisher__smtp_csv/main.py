@@ -14,8 +14,8 @@ MY_GMAIL = os.getenv('MY_GMAIL')
 GMAIL_PASSWORD = os.getenv('GMAIL_PASSWORD')
 
 # 1. Update the birthdays.csv. Put in a valid email address for testing.
-# 2. Check if today matches a birthday in the birthdays.csv
-pass    # ------ My solution ------- #
+# 2. Check if today matches a birthday in birthdays.csv.
+
 now_month = dt.datetime.today().month   # Today's month
 now_day = dt.datetime.today().day       # Today's day
 
@@ -31,7 +31,7 @@ if not b_today.empty:   # If there are any birthdays today (if b_today is not an
             letter_text = letter.read()
             new_mail_text = letter_text.replace("[NAME]", b_dict[person]["name"])
 
-            # 4. Send the letter generated in step 3 to that person's email address.
+            # 4. Send the letter generated in step 3 to the person's email address.
             with smtplib.SMTP(GMAIL_SERVER_URL) as connection:
                 connection.starttls()
                 connection.login(user=MY_GMAIL, password=GMAIL_PASSWORD)
