@@ -17,6 +17,8 @@ GMAIL_SERVER_URL = "smtp.gmail.com"
 MY_GMAIL = os.getenv('MY_GMAIL')
 GMAIL_PASSWORD = os.getenv('GMAIL_PASSWORD')
 
+# oslo_latitude = 59.913868
+# oslo_longitude = 10.752245
 MY_LAT = 44.5987  # Latitude
 MY_LONG = -88.2671  # Longitude
 
